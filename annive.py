@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_extras import row
-import hydralit_components as hc
+
 from streamlit_extras.let_it_rain import rain 
 
 st.set_page_config(layout="wide")
