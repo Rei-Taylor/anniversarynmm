@@ -22,11 +22,11 @@ def main():
 
 main()
 
-img = r"C:\Users\dyyk\Desktop\NMM\a.jpg"
-img2 = r"C:\Users\dyyk\Desktop\NMM\c.jpg"
-img3 = r"C:\Users\dyyk\Desktop\NMM\abc.jpg"
-img4 = r"C:\Users\dyyk\Desktop\NMM\def.jpg"
-img5 = r"C:\Users\dyyk\Desktop\NMM\hij.jpg"
+img = r"a.jpg"
+img2 = r"c.jpg"
+img3 = r"abc.jpg"
+img4 = r"def.jpg"
+img5 = r"hij.jpg"
 cols = st.columns([1,3,1])
     
 with cols[1]:
