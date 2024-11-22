@@ -28,6 +28,7 @@ img3 = r"abc.jpg"
 img4 = r"def.jpg"
 img5 = r"hij.jpg"
 img6 = r"cha.jpg"
+img7 = r"dir1.jpg"
 cols = st.columns([1,3,1])
     
 with cols[1]:
@@ -52,6 +53,6 @@ with st.container(border=True):
     with cols[1]:
         st.image(img6)
     with cols[2]:
-        st.image(img4)
+        st.image(img7)
 
 
