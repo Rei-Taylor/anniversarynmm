@@ -41,6 +41,20 @@
             text-align: center;
             padding: 1rem;
         }
+        .love-counter {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(to bottom, #ee9ca7, #ffdde1);
+            color: #ff6f61;
+        }
+        .love-counter h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .counter {
+            font-size: 3rem;
+            font-weight: bold;
+        }
         /* Falling Hearts Animation */
         .heart {
             position: absolute;
@@ -106,27 +120,34 @@
         </div>
     </div>
 
+    <!-- Love Counter Section -->
+    <div class="love-counter">
+        <h2>Our Love in Days</h2>
+        <p>We’ve been together for:</p>
+        <div class="counter" id="counter">0</div>
+    </div>
+
     <!-- Gallery Section -->
     <div class="container my-5" id="gallery">
         <h2 class="text-center mb-4">Gallery</h2>
         <div class="row g-3 gallery">
             <div class="col-12 col-sm-6 col-md-4">
-                <img src="a.jpg" alt="Memory 1" class="img-fluid">
+                <img src="https://via.placeholder.com/300x200" alt="Memory 1" class="img-fluid">
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <img src="abc.jpg" alt="Memory 2" class="img-fluid">
+                <img src="https://via.placeholder.com/300x200" alt="Memory 2" class="img-fluid">
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <img src="c.jpg" alt="Memory 3" class="img-fluid">
+                <img src="https://via.placeholder.com/300x200" alt="Memory 3" class="img-fluid">
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <img src="cha.jpg" alt="Memory 4" class="img-fluid">
+                <img src="https://via.placeholder.com/300x200" alt="Memory 4" class="img-fluid">
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <img src="def.jpg" alt="Memory 5" class="img-fluid">
+                <img src="https://via.placeholder.com/300x200" alt="Memory 5" class="img-fluid">
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <img src="dir1.jpg" alt="Memory 6" class="img-fluid">
+                <img src="https://via.placeholder.com/300x200" alt="Memory 6" class="img-fluid">
             </div>
         </div>
     </div>
@@ -137,8 +158,7 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Falling Hearts JavaScript -->
     <script>
@@ -157,6 +177,15 @@
         }
 
         setInterval(createHeart, 300);
+
+        // Love Counter - Days Calculation
+        const counterElement = document.getElementById('counter');
+        const startDate = new Date('2024-08-01'); // Start date: August 1, 2024
+        const today = new Date();
+        const timeDifference = today - startDate;
+        const daysTogether = Math.floor(timeDifference / (1000 * 60 * 60 * 24)); // Convert ms to days
+
+        counterElement.textContent = daysTogether;
     </script>
 </body>
 </html>
