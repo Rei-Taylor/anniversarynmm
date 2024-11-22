@@ -34,7 +34,7 @@ cols = st.columns([1,3,1])
 with cols[1]:
     st.header("Our Mermories")
     with st.container(border=True):
-        st.image(img, caption="Our Anniversary")
+        st.image(img, caption="အတူရှိရင် အမြဲပျော်ရတယ်")
 
 with st.container(border=True):
     cols = st.columns([1,1,1])
